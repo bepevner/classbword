@@ -1,0 +1,63 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #EEF1F2;
+  color: #1F2B24;
+}
+.app { max-width: 480px; margin: 0 auto; padding-bottom: 40px; min-height: 100vh; }
+.hidden { display: none !important; }
+
+.header { display: flex; justify-content: space-between; align-items: center; padding: 22px 20px 16px; }
+.eyebrow { font-size: 11px; letter-spacing: .12em; color: #7FA093; font-weight: 700; }
+.title { font-size: 22px; font-weight: 800; margin-top: 2px; }
+
+.role-switch { display: flex; background: #fff; border-radius: 10px; padding: 3px; border: 1px solid #DCE3E0; }
+.role-btn { border: none; background: transparent; padding: 6px 12px; font-size: 13px; border-radius: 8px; color: #8a95a6; font-weight: 600; cursor: pointer; }
+.role-btn.active { background: #2E7D6B; color: #fff; }
+
+.lock-wrap { display: flex; justify-content: center; padding: 40px 20px; }
+.lock-card { background: #fff; border-radius: 16px; padding: 28px; text-align: center; width: 100%; max-width: 320px; border: 1px solid #DCE3E0; }
+.lock-emoji { font-size: 28px; margin-bottom: 8px; }
+.lock-title { font-weight: 700; margin-bottom: 4px; }
+.lock-sub { font-size: 13px; color: #8a95a6; margin-bottom: 16px; }
+.error-text { color: #D65A5A; font-size: 12px; margin-top: 6px; min-height: 16px; }
+
+.tabs { display: flex; gap: 6px; padding: 0 20px; border-bottom: 1px solid #DCE3E0; }
+.tab-btn { border: none; background: transparent; padding: 10px 4px; font-size: 14px; font-weight: 600; color: #8a95a6; border-bottom: 2px solid transparent; margin-right: 14px; cursor: pointer; }
+.tab-btn.active { color: #1F2B24; border-bottom: 2px solid #2E7D6B; }
+.content { padding: 18px 20px; }
+
+.input { width: 100%; padding: 11px 12px; border-radius: 10px; border: 1px solid #DCE3E0; font-size: 14px; outline: none; background: #fff; font-family: inherit; }
+.textarea { min-height: 120px; resize: vertical; margin-top: 8px; }
+
+.btn { border: none; border-radius: 10px; padding: 10px 16px; font-size: 14px; font-weight: 700; cursor: pointer; font-family: inherit; }
+.btn.primary { background: #2E7D6B; color: #fff; }
+.btn.ghost { background: transparent; color: #5c6b78; border: 1px solid #DCE3E0; font-weight: 600; }
+.btn.full { width: 100%; margin-top: 12px; }
+.row { display: flex; }
+.row.gap { gap: 8px; }
+
+.edit-card { background: #fff; border: 1px solid #DCE3E0; border-radius: 12px; padding: 14px; margin-top: 12px; }
+.empty { color: #8a95a6; font-size: 13px; text-align: center; padding: 30px 10px; line-height: 1.6; }
+
+.post-card { background: #fff; border: 1px solid #DCE3E0; border-radius: 12px; margin-bottom: 10px; overflow: hidden; }
+.post-header-row { display: flex; align-items: center; gap: 10px; padding: 14px; cursor: pointer; }
+.pin { width: 8px; height: 8px; border-radius: 50%; background: #E8A33D; flex-shrink: 0; }
+.post-title { font-weight: 700; font-size: 14.5px; }
+.post-date { font-size: 11.5px; color: #a3aeb9; margin-top: 2px; }
+.post-body { padding: 0 14px 16px 32px; font-size: 13.5px; color: #3f4b56; line-height: 1.6; white-space: pre-wrap; }
+.post-actions { display: flex; gap: 8px; margin-top: 12px; }
+.small-btn { background: transparent; border: 1px solid #DCE3E0; border-radius: 8px; padding: 6px 12px; font-size: 12px; font-weight: 600; color: #5c6b78; cursor: pointer; }
+
+.date-nav { display: flex; align-items: center; justify-content: space-between; background: #fff; border: 1px solid #DCE3E0; border-radius: 12px; padding: 10px 14px; }
+.link-btn { border: none; background: transparent; font-size: 13px; font-weight: 600; color: #2E7D6B; cursor: pointer; }
+.date-label { font-weight: 800; font-size: 15px; }
+
+.meal-card { background: #fff; border: 1px solid #DCE3E0; border-radius: 12px; padding: 16px; margin-bottom: 12px; }
+.meal-badge { display: inline-block; background: #F0EAD6; color: #8a6d1f; font-size: 11.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px; }
+.meal-dish { margin-top: 8px; line-height: 1.7; }
+.cal-info { margin-top: 10px; font-size: 11.5px; color: #a3aeb9; }
+
+.section-label { font-size: 13px; font-weight: 700; margin-bottom: 6px; color: #3f4b56; }
+.hint { font-size: 12px; color: #8a95a6; line-height: 1.6; margin-bottom: 6px; }
